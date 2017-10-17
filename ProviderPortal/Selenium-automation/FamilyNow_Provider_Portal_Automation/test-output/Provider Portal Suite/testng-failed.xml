@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Provider Portal Suite]">
+  <listeners>
+    <listener class-name="general.TestListener"/>
+    <listener class-name="general.CustomReport"/>
+  </listeners>
+  <test name="User Stories(failed)">
+    <classes>
+      <class name="testScripts.AddressInformationTest">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="openbrowser"/>
+        </methods>
+      </class> <!-- testScripts.AddressInformationTest -->
+      <class name="testScripts.PreferenceTest">
+        <methods>
+          <include name="openbrowser"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- testScripts.PreferenceTest -->
+      <class name="testScripts.ReferenceTest">
+        <methods>
+          <include name="SaveReference"/>
+          <include name="openbrowser"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- testScripts.ReferenceTest -->
+      <class name="testScripts.SupportingDocumentTest">
+        <methods>
+          <include name="VerifySupportingDocumentIsSaved"/>
+          <include name="openbrowser"/>
+          <include name="DeleteDocument"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- testScripts.SupportingDocumentTest -->
+      <class name="testScripts.ApplicationTypeTest">
+        <methods>
+          <include name="openbrowser"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- testScripts.ApplicationTypeTest -->
+      <class name="testScripts.ApplicationSummaryTest">
+        <methods>
+          <include name="openbrowser"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- testScripts.ApplicationSummaryTest -->
+      <class name="testScripts.FosterCareTest">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="openbrowser"/>
+        </methods>
+      </class> <!-- testScripts.FosterCareTest -->
+      <class name="testScripts.ApplicationParticipantTest">
+        <methods>
+          <include name="openbrowser"/>
+          <include name="SaveApplicationType"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- testScripts.ApplicationParticipantTest -->
+    </classes>
+  </test> <!-- User Stories(failed) -->
+</suite> <!-- Failed suite [Provider Portal Suite] -->

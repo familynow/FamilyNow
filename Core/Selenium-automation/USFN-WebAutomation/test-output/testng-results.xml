@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="USFN Regression Test Suite" duration-ms="327104" started-at="2017-09-06T08:19:42Z" finished-at="2017-09-06T08:25:09Z">
+    <groups>
+    </groups>
+    <test name="Investigation Module" duration-ms="7" started-at="2017-09-06T08:19:42Z" finished-at="2017-09-06T08:19:42Z">
+    </test> <!-- Investigation Module -->
+    <test name="CPS Intake Module" duration-ms="327063" started-at="2017-09-06T08:19:42Z" finished-at="2017-09-06T08:25:09Z">
+      <class name="TestScripts.UserStory18Test">
+        <test-method status="PASS" signature="openbrowser()[pri:0, instance:TestScripts.UserStory18Test@6d4b1c02]" name="openbrowser" is-config="true" duration-ms="4262" started-at="2017-09-06T13:49:42Z" finished-at="2017-09-06T13:49:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openbrowser -->
+        <test-method status="PASS" signature="CreateAlligation()[pri:0, instance:TestScripts.UserStory18Test@6d4b1c02]" name="CreateAlligation" duration-ms="70631" started-at="2017-09-06T13:49:46Z" finished-at="2017-09-06T13:50:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateAlligation -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:TestScripts.UserStory18Test@6d4b1c02]" name="closebrowser" is-config="true" duration-ms="13" started-at="2017-09-06T13:50:57Z" finished-at="2017-09-06T13:50:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method status="PASS" signature="openbrowser()[pri:0, instance:TestScripts.UserStory18Test@6d4b1c02]" name="openbrowser" is-config="true" duration-ms="4613" started-at="2017-09-06T13:50:57Z" finished-at="2017-09-06T13:51:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openbrowser -->
+        <test-method status="PASS" signature="DeleteAllegation()[pri:0, instance:TestScripts.UserStory18Test@6d4b1c02]" name="DeleteAllegation" duration-ms="132413" started-at="2017-09-06T13:51:02Z" finished-at="2017-09-06T13:53:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteAllegation -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:TestScripts.UserStory18Test@6d4b1c02]" name="closebrowser" is-config="true" duration-ms="18" started-at="2017-09-06T13:53:14Z" finished-at="2017-09-06T13:53:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method status="PASS" signature="openbrowser()[pri:0, instance:TestScripts.UserStory18Test@6d4b1c02]" name="openbrowser" is-config="true" duration-ms="5681" started-at="2017-09-06T13:53:14Z" finished-at="2017-09-06T13:53:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openbrowser -->
+        <test-method status="PASS" signature="VerifyDuplicateAllegationGroup()[pri:0, instance:TestScripts.UserStory18Test@6d4b1c02]" name="VerifyDuplicateAllegationGroup" duration-ms="109398" started-at="2017-09-06T13:53:20Z" finished-at="2017-09-06T13:55:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDuplicateAllegationGroup -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:TestScripts.UserStory18Test@6d4b1c02]" name="closebrowser" is-config="true" duration-ms="10" started-at="2017-09-06T13:55:09Z" finished-at="2017-09-06T13:55:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- TestScripts.UserStory18Test -->
+    </test> <!-- CPS Intake Module -->
+    <test name="Admin Module" duration-ms="1" started-at="2017-09-06T08:25:09Z" finished-at="2017-09-06T08:25:09Z">
+    </test> <!-- Admin Module -->
+    <test name="Non CPS INtake" duration-ms="1" started-at="2017-09-06T08:25:09Z" finished-at="2017-09-06T08:25:09Z">
+    </test> <!-- Non CPS INtake -->
+  </suite> <!-- USFN Regression Test Suite -->
+</testng-results>

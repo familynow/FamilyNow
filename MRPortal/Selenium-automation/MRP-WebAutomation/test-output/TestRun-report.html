@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG Report</title>
+<style type="text/css">
+table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.passedodd td {background-color: #0A0}
+.passedeven td {background-color: #3F3}
+.skippedodd td {background-color: #CCC}
+.skippedodd td {background-color: #DDD}
+.failedodd td,.numi_attn {background-color: #f49b42}
+.failedeven td,.stripe .numi_attn {background-color: #f49b42}
+.stacktrace {white-space:pre;font-family:monospace}
+.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body>
+<center><h1>USFN Web Automation Report - 03/20/2017 14:31:37</h1></center><table cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>Test</th><th>Methods<br/>Passed</th><th># skipped</th><th># failed</th><th>Browser</th><th>Start<br/>Time</th><th>End<br/>Time</th><th>Total<br/>Time(hh:mm:ss)</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
+<tr><th colspan="10">MRP Regression Test Suite</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t"1"><b>MR Portal User Stories Script</b></a></td><td class="numi">12</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">null</td></td>
+<td class="numi">02:17:19</td></td>
+<td class="numi">02:31:37</td></td>
+<td class="numi">00:14:18</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
+<tr><th>Class</th><th>Method</th><th>Exception Info</th><th>Start Time </th><th>Execution Time<br/>(hh:mm:ss)</th></tr>
+<tr><th colspan="5">MRP Regression Test Suite</th></tr>
+<tr id="t1"><th colspan="5">MR Portal User Stories Script &#8212; failed</th></tr>
+<tr class="failedodd"><td>TestScript.ComplaintParticipantTest</td><td><a href="#m"1><b>VerifySameAsAddress</b>  )</a></td><td class="numi" style="text-align:left;padding-right:2em">java.lang.AssertionError: Address line 1 is not correct expected [true] but found [false]<br/></td><td style="text-align:right">02:20:29</td><td class="numi">00:00:22</td></tr>
+<tr><th colspan="5">MR Portal User Stories Script &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="3">TestScript.AllegationTest</td><td><a href="#m"2><b>DeleteAllegation</b>  )</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">02:21:26</td><td class="numi">00:00:53</td></tr><tr class="passedodd"><td><a href="#m"3><b>EditAllegation</b>  )</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">02:22:25</td><td class="numi">00:01:11</td></tr><tr class="passedodd"><td><a href="#m"4><b>SaveAllegationWithRequiredFieldOnly</b>  )</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">02:23:44</td><td class="numi">00:00:35</td></tr>
+<tr class="passedeven"><td rowspan="3">TestScript.ComplaintParticipantTest</td><td><a href="#m"5><b>DeleteComplaintParticipant</b>  )</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">02:19:19</td><td class="numi">00:00:28</td></tr><tr class="passedeven"><td><a href="#m"6><b>SaveComplaintParticipantWithRequiredFieldOnly</b>  )</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">02:19:55</td><td class="numi">00:00:24</td></tr><tr class="passedeven"><td><a href="#m"7><b>VerifyUnkownAddress</b>  )</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">02:20:59</td><td class="numi">00:00:21</td></tr>
+<tr class="passedodd"><td>TestScript.ComplaintSummaryTest</td><td><a href="#m"8><b>SubmitTheComplaint</b>  )</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">02:24:26</td><td class="numi">00:05:11</td></tr>
+<tr class="passedeven"><td>TestScript.MyComplaintPageTest</td><td><a href="#m"9><b>VerifyInProgressComplaint</b>  )</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">02:29:44</td><td class="numi">00:01:53</td></tr>
+<tr class="passedodd"><td rowspan="4">TestScript.ReporterProfileTest</td><td><a href="#m"10><b>SaveReporterProfileWithRequiredFieldOnly</b>  )</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">02:17:25</td><td class="numi">00:00:28</td></tr><tr class="passedodd"><td><a href="#m"11><b>VerifyRequiredFieldValidationMessage</b>  )</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">02:18:00</td><td class="numi">00:00:22</td></tr><tr class="passedodd"><td><a href="#m"12><b>VerifySignUp</b>  )</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">02:18:30</td><td class="numi">00:00:16</td></tr><tr class="passedodd"><td><a href="#m"13><b>VerifyUniqueUserName</b>  )</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">02:18:53</td><td class="numi">00:00:19</td></tr>
+</table>
+<h1>MR Portal User Stories Script</h1>
+<h2 id="m"1">TestScript.ComplaintParticipantTest:VerifySameAsAddress</h2>
+<div>
+<div class="stacktrace">java.lang.AssertionError: Address line 1 is not correct expected [true] but found [false]
+	at TestScript.ComplaintParticipantTest.VerifySameAsAddress(ComplaintParticipantTest.java:151)
+... Removed 28 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m"2">TestScript.AllegationTest:DeleteAllegation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m"3">TestScript.AllegationTest:EditAllegation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m"4">TestScript.AllegationTest:SaveAllegationWithRequiredFieldOnly</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m"5">TestScript.ComplaintParticipantTest:DeleteComplaintParticipant</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m"6">TestScript.ComplaintParticipantTest:SaveComplaintParticipantWithRequiredFieldOnly</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m"7">TestScript.ComplaintParticipantTest:VerifyUnkownAddress</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m"8">TestScript.ComplaintSummaryTest:SubmitTheComplaint</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m"9">TestScript.MyComplaintPageTest:VerifyInProgressComplaint</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m"10">TestScript.ReporterProfileTest:SaveReporterProfileWithRequiredFieldOnly</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m"11">TestScript.ReporterProfileTest:VerifyRequiredFieldValidationMessage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m"12">TestScript.ReporterProfileTest:VerifySignUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m"13">TestScript.ReporterProfileTest:VerifyUniqueUserName</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<center> TestNG Report </center>
+</body></html>

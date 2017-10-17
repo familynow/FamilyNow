@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression Test Suite]">
+  <listeners>
+    <listener class-name="General.TestListener"/>
+  </listeners>
+  <test name="CPS INtake(failed)">
+    <classes>
+      <class name="TestScripts.UserStory17Test">
+        <methods>
+          <include name="VerifyLinkParticipant"/>
+          <include name="openbrowser"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- TestScripts.UserStory17Test -->
+      <class name="TestScripts.UserStory19Test">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="VerifyAnonymousReportingPerson"/>
+          <include name="openbrowser"/>
+        </methods>
+      </class> <!-- TestScripts.UserStory19Test -->
+      <class name="TestScripts.UserStory16Test">
+        <methods>
+          <include name="VerifyEditSubmittedIntake"/>
+          <include name="openbrowser"/>
+          <include name="closebrowser"/>
+          <include name="VerifyEditAwaitingScreeningIntake"/>
+        </methods>
+      </class> <!-- TestScripts.UserStory16Test -->
+      <class name="TestScripts.UserStory20Test">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="openbrowser"/>
+        </methods>
+      </class> <!-- TestScripts.UserStory20Test -->
+      <class name="TestScripts.UserStory18Test">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="EditAllegation"/>
+          <include name="DeleteAllegation"/>
+          <include name="openbrowser"/>
+        </methods>
+      </class> <!-- TestScripts.UserStory18Test -->
+    </classes>
+  </test> <!-- CPS INtake(failed) -->
+</suite> <!-- Failed suite [Regression Test Suite] -->

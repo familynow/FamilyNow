@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MRP Regression Test Suite" verbose="1">
+<listeners>
+       <listener class-name="General.TestListener"/>
+       <listener class-name="General.CustomReport"/>
+      
+       
+  </listeners>
+  <test name="MR Portal User Stories Script">
+    <classes>
+        
+         <class name="TestScript.ReporterProfileTest"/>
+          <class name="TestScript.ComplaintParticipantTest"/>
+         <class name="TestScript.AllegationTest"/>
+          <class name="TestScript.ComplaintSummaryTest"/>
+        
+        <class name="TestScript.MyComplaintPageTest"/>
+        
+      
+
+    </classes>
+  </test>
+
+</suite>

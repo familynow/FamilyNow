@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Provider_Portal_Suite">
+              <span class="suite-name border-failed">Provider Portal Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Provider_Portal_Suite">
+                    <span>D:\GitProjects\Provider-Portal-Automation\FamilyNow_Provider_Portal_Automation\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Provider_Portal_Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Provider_Portal_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Provider_Portal_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Provider_Portal_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Provider_Portal_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Provider_Portal_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">14 methods, 4 failed,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Provider_Portal_Suite" class="hide-methods failed suite-Provider_Portal_Suite"> (hide)</a> <!-- hide-methods failed suite-Provider_Portal_Suite -->
+                      <a href="#" panel-name="suite-Provider_Portal_Suite" class="show-methods failed suite-Provider_Portal_Suite"> (show)</a> <!-- show-methods failed suite-Provider_Portal_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Provider_Portal_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Provider_Portal_Suite" title="testScripts.SupportingDocumentTest" hash-for-method="DeleteDocument">DeleteDocument</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Provider_Portal_Suite" title="testScripts.ApplicationParticipantTest" hash-for-method="SaveApplicationType">SaveApplicationType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Provider_Portal_Suite" title="testScripts.ReferenceTest" hash-for-method="SaveReference">SaveReference</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Provider_Portal_Suite" title="testScripts.SupportingDocumentTest" hash-for-method="VerifySupportingDocumentIsSaved">VerifySupportingDocumentIsSaved</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Provider_Portal_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Provider_Portal_Suite" class="hide-methods passed suite-Provider_Portal_Suite"> (hide)</a> <!-- hide-methods passed suite-Provider_Portal_Suite -->
+                      <a href="#" panel-name="suite-Provider_Portal_Suite" class="show-methods passed suite-Provider_Portal_Suite"> (show)</a> <!-- show-methods passed suite-Provider_Portal_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Provider_Portal_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Provider_Portal_Suite" title="testScripts.ApplicationParticipantTest" hash-for-method="CreatedApplicationInApplicationPage">CreatedApplicationInApplicationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Provider_Portal_Suite" title="testScripts.ReferenceTest" hash-for-method="DeleteApplicant">DeleteApplicant</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Provider_Portal_Suite" title="testScripts.AddressInformationTest" hash-for-method="SaveAddressInformation">SaveAddressInformation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Provider_Portal_Suite" title="testScripts.ApplicationTypeTest" hash-for-method="SaveApplicationType">SaveApplicationType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Provider_Portal_Suite" title="testScripts.PreferenceTest" hash-for-method="SavePreference">SavePreference</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Provider_Portal_Suite" title="testScripts.FosterCareTest" hash-for-method="SaveQuestionnaire">SaveQuestionnaire</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Provider_Portal_Suite" title="testScripts.ApplicationSummaryTest" hash-for-method="VerifyApplicationSummary">VerifyApplicationSummary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Provider_Portal_Suite" title="testScripts.ApplicationParticipantTest" hash-for-method="VerifyRequiredFieldValidation">VerifyRequiredFieldValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Provider_Portal_Suite" title="testScripts.ApplicationSummaryTest" hash-for-method="VerifySubmittedApplication">VerifySubmittedApplication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Provider_Portal_Suite" title="testScripts.ApplicationParticipantTest" hash-for-method="VerifyUnEmployedCheckBox">VerifyUnEmployedCheckBox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Provider_Portal_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Provider_Portal_Suite" class="panel Provider_Portal_Suite">
+          <div class="suite-Provider_Portal_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testScripts.ReferenceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SaveReference">
+                  </a> <!-- SaveReference -->
+                  <span class="method-name">SaveReference</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Reference Name1 is not Saved expected [true] but found [false],
+	Reference Name2 is not Saved expected [true] but found [false],
+	Reference Name3 is not Saved expected [true] but found [false],
+	Contact 1 is not Saved expected [true] but found [false],
+	Contact 2 is not Saved expected [true] but found [false],
+	Contact 2 is not Saved expected [true] but found [false]
+	at testScripts.ReferenceTest.SaveReference(ReferenceTest.java:129)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Provider_Portal_Suite-class-failed -->
+          <div class="suite-Provider_Portal_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testScripts.SupportingDocumentTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeleteDocument">
+                  </a> <!-- DeleteDocument -->
+                  <span class="method-name">DeleteDocument</span>
+                  <div class="stack-trace">java.lang.AssertionError: element not visible
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;in-pushyamk-1&apos;, ip: &apos;129.221.62.23&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\PushyamK\AppData\Local\Temp\scoped_dir28564_1735}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: f99110a671bf8115010ebea51f0fe331
+	at testScripts.SupportingDocumentTest.DeleteDocument(SupportingDocumentTest.java:257)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifySupportingDocumentIsSaved">
+                  </a> <!-- VerifySupportingDocumentIsSaved -->
+                  <span class="method-name">VerifySupportingDocumentIsSaved</span>
+                  <div class="stack-trace">java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;applicationType&quot;}
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;in-pushyamk-1&apos;, ip: &apos;129.221.62.23&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\PushyamK\AppData\Local\Temp\scoped_dir19384_14939}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 8f58f7b690db1a6326976ec53b622547
+*** Element info: {Using=id, value=applicationType}
+	at testScripts.SupportingDocumentTest.VerifySupportingDocumentIsSaved(SupportingDocumentTest.java:167)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Provider_Portal_Suite-class-failed -->
+          <div class="suite-Provider_Portal_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testScripts.ApplicationParticipantTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SaveApplicationType">
+                  </a> <!-- SaveApplicationType -->
+                  <span class="method-name">SaveApplicationType</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [04/05/2017] but found []
+	at testScripts.ApplicationParticipantTest.SaveApplicationType(ApplicationParticipantTest.java:139)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Provider_Portal_Suite-class-failed -->
+          <div class="suite-Provider_Portal_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testScripts.AddressInformationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SaveAddressInformation">
+                  </a> <!-- SaveAddressInformation -->
+                  <span class="method-name">SaveAddressInformation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Provider_Portal_Suite-class-passed -->
+          <div class="suite-Provider_Portal_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testScripts.PreferenceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SavePreference">
+                  </a> <!-- SavePreference -->
+                  <span class="method-name">SavePreference</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Provider_Portal_Suite-class-passed -->
+          <div class="suite-Provider_Portal_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testScripts.ReferenceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeleteApplicant">
+                  </a> <!-- DeleteApplicant -->
+                  <span class="method-name">DeleteApplicant</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Provider_Portal_Suite-class-passed -->
+          <div class="suite-Provider_Portal_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testScripts.ApplicationTypeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SaveApplicationType">
+                  </a> <!-- SaveApplicationType -->
+                  <span class="method-name">SaveApplicationType</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Provider_Portal_Suite-class-passed -->
+          <div class="suite-Provider_Portal_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testScripts.ApplicationSummaryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyApplicationSummary">
+                  </a> <!-- VerifyApplicationSummary -->
+                  <span class="method-name">VerifyApplicationSummary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifySubmittedApplication">
+                  </a> <!-- VerifySubmittedApplication -->
+                  <span class="method-name">VerifySubmittedApplication</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Provider_Portal_Suite-class-passed -->
+          <div class="suite-Provider_Portal_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testScripts.FosterCareTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SaveQuestionnaire">
+                  </a> <!-- SaveQuestionnaire -->
+                  <span class="method-name">SaveQuestionnaire</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Provider_Portal_Suite-class-passed -->
+          <div class="suite-Provider_Portal_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testScripts.ApplicationParticipantTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreatedApplicationInApplicationPage">
+                  </a> <!-- CreatedApplicationInApplicationPage -->
+                  <span class="method-name">CreatedApplicationInApplicationPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyRequiredFieldValidation">
+                  </a> <!-- VerifyRequiredFieldValidation -->
+                  <span class="method-name">VerifyRequiredFieldValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyUnEmployedCheckBox">
+                  </a> <!-- VerifyUnEmployedCheckBox -->
+                  <span class="method-name">VerifyUnEmployedCheckBox</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Provider_Portal_Suite-class-passed -->
+        </div> <!-- panel Provider_Portal_Suite -->
+        <div panel-name="test-xml-Provider_Portal_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\GitProjects\Provider-Portal-Automation\FamilyNow_Provider_Portal_Automation\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Provider Portal Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;general.TestListener&quot;/&gt;
+    &lt;listener class-name=&quot;general.CustomReport&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;User Stories&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testScripts.ApplicationTypeTest&quot;/&gt;
+      &lt;class name=&quot;testScripts.ApplicationParticipantTest&quot;/&gt;
+      &lt;class name=&quot;testScripts.AddressInformationTest&quot;/&gt;
+      &lt;class name=&quot;testScripts.FosterCareTest&quot;/&gt;
+      &lt;class name=&quot;testScripts.PreferenceTest&quot;/&gt;
+      &lt;class name=&quot;testScripts.ReferenceTest&quot;/&gt;
+      &lt;class name=&quot;testScripts.SupportingDocumentTest&quot;/&gt;
+      &lt;class name=&quot;testScripts.ApplicationSummaryTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- User Stories --&gt;
+&lt;/suite&gt; &lt;!-- Provider Portal Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Provider_Portal_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Provider Portal Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">User Stories (8 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Provider_Portal_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Provider Portal Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Provider_Portal_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Provider Portal Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Provider_Portal_Suite');
+function tableData_Provider_Portal_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(14);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'VerifySubmittedApplication')
+data.setCell(0, 2, 'testScripts.ApplicationSummaryTest')
+data.setCell(0, 3, 91994);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'VerifyApplicationSummary')
+data.setCell(1, 2, 'testScripts.ApplicationSummaryTest')
+data.setCell(1, 3, 75319);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'SaveQuestionnaire')
+data.setCell(2, 2, 'testScripts.FosterCareTest')
+data.setCell(2, 3, 59808);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'DeleteApplicant')
+data.setCell(3, 2, 'testScripts.ReferenceTest')
+data.setCell(3, 3, 57689);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'SaveReference')
+data.setCell(4, 2, 'testScripts.ReferenceTest')
+data.setCell(4, 3, 54192);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'DeleteDocument')
+data.setCell(5, 2, 'testScripts.SupportingDocumentTest')
+data.setCell(5, 3, 53170);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'SavePreference')
+data.setCell(6, 2, 'testScripts.PreferenceTest')
+data.setCell(6, 3, 40671);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'SaveApplicationType')
+data.setCell(7, 2, 'testScripts.ApplicationParticipantTest')
+data.setCell(7, 3, 35156);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'SaveAddressInformation')
+data.setCell(8, 2, 'testScripts.AddressInformationTest')
+data.setCell(8, 3, 30089);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'VerifyRequiredFieldValidation')
+data.setCell(9, 2, 'testScripts.ApplicationParticipantTest')
+data.setCell(9, 3, 24964);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'CreatedApplicationInApplicationPage')
+data.setCell(10, 2, 'testScripts.ApplicationParticipantTest')
+data.setCell(10, 3, 24070);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'VerifySupportingDocumentIsSaved')
+data.setCell(11, 2, 'testScripts.SupportingDocumentTest')
+data.setCell(11, 3, 22399);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'VerifyUnEmployedCheckBox')
+data.setCell(12, 2, 'testScripts.ApplicationParticipantTest')
+data.setCell(12, 3, 14407);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'SaveApplicationType')
+data.setCell(13, 2, 'testScripts.ApplicationTypeTest')
+data.setCell(13, 3, 13427);
+window.suiteTableData['Provider_Portal_Suite']= { tableData: data, tableDiv: 'times-div-Provider_Portal_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 9 minutes</span>
+              <div id="times-div-Provider_Portal_Suite">
+              </div> <!-- times-div-Provider_Portal_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Provider_Portal_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Provider Portal Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Provider_Portal_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Provider_Portal_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testScripts.ApplicationTypeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SaveApplicationType</span>
+                <span class="method-start">1974 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">15402 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testScripts.ApplicationParticipantTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser</span>
+                <span class="method-start">15593 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CreatedApplicationInApplicationPage</span>
+                <span class="method-start">17287 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">41359 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser</span>
+                <span class="method-start">41505 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">SaveApplicationType</span>
+                <span class="method-start">43164 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">78619 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser</span>
+                <span class="method-start">78813 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyRequiredFieldValidation</span>
+                <span class="method-start">80386 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">105352 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser</span>
+                <span class="method-start">105494 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyUnEmployedCheckBox</span>
+                <span class="method-start">107198 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">121606 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testScripts.AddressInformationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser</span>
+                <span class="method-start">123683 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SaveAddressInformation</span>
+                <span class="method-start">125362 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">155451 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testScripts.FosterCareTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser</span>
+                <span class="method-start">155560 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SaveQuestionnaire</span>
+                <span class="method-start">157254 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">217063 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testScripts.PreferenceTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser</span>
+                <span class="method-start">217241 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SavePreference</span>
+                <span class="method-start">218650 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">259322 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testScripts.ReferenceTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser</span>
+                <span class="method-start">259454 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DeleteApplicant</span>
+                <span class="method-start">270919 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">328610 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser</span>
+                <span class="method-start">328769 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">SaveReference</span>
+                <span class="method-start">330478 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">384949 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testScripts.SupportingDocumentTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser</span>
+                <span class="method-start">385182 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">DeleteDocument</span>
+                <span class="method-start">387010 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">440811 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser</span>
+                <span class="method-start">440982 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifySupportingDocumentIsSaved</span>
+                <span class="method-start">442529 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">465186 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testScripts.ApplicationSummaryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser</span>
+                <span class="method-start">465315 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyApplicationSummary</span>
+                <span class="method-start">466656 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">541976 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser</span>
+                <span class="method-start">542115 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifySubmittedApplication</span>
+                <span class="method-start">543759 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">635755 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="13" passed="12">
+  <reporter-output>
+  </reporter-output>
+  <suite name="MRP Regression Test Suite" duration-ms="858596" started-at="2017-03-20T08:47:19Z" finished-at="2017-03-20T09:01:37Z">
+    <groups>
+    </groups>
+    <test name="MR Portal User Stories Script" duration-ms="858596" started-at="2017-03-20T08:47:19Z" finished-at="2017-03-20T09:01:37Z">
+      <class name="TestScript.ComplaintParticipantTest">
+        <test-method status="PASS" signature="openbrowser()[pri:0, instance:TestScript.ComplaintParticipantTest@66a3ffec]" name="openbrowser" is-config="true" duration-ms="7148" started-at="2017-03-20T14:19:12Z" finished-at="2017-03-20T14:19:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openbrowser -->
+        <test-method status="PASS" signature="DeleteComplaintParticipant()[pri:0, instance:TestScript.ComplaintParticipantTest@66a3ffec]" name="DeleteComplaintParticipant" duration-ms="28328" started-at="2017-03-20T14:19:19Z" finished-at="2017-03-20T14:19:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteComplaintParticipant -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:TestScript.ComplaintParticipantTest@66a3ffec]" name="closebrowser" is-config="true" duration-ms="20" started-at="2017-03-20T14:19:47Z" finished-at="2017-03-20T14:19:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method status="PASS" signature="openbrowser()[pri:0, instance:TestScript.ComplaintParticipantTest@66a3ffec]" name="openbrowser" is-config="true" duration-ms="7774" started-at="2017-03-20T14:19:47Z" finished-at="2017-03-20T14:19:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openbrowser -->
+        <test-method status="PASS" signature="SaveComplaintParticipantWithRequiredFieldOnly()[pri:0, instance:TestScript.ComplaintParticipantTest@66a3ffec]" name="SaveComplaintParticipantWithRequiredFieldOnly" duration-ms="24070" started-at="2017-03-20T14:19:55Z" finished-at="2017-03-20T14:20:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SaveComplaintParticipantWithRequiredFieldOnly -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:TestScript.ComplaintParticipantTest@66a3ffec]" name="closebrowser" is-config="true" duration-ms="33" started-at="2017-03-20T14:20:19Z" finished-at="2017-03-20T14:20:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method status="PASS" signature="openbrowser()[pri:0, instance:TestScript.ComplaintParticipantTest@66a3ffec]" name="openbrowser" is-config="true" duration-ms="9937" started-at="2017-03-20T14:20:19Z" finished-at="2017-03-20T14:20:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openbrowser -->
+        <test-method status="FAIL" signature="VerifySameAsAddress()[pri:0, instance:TestScript.ComplaintParticipantTest@66a3ffec]" name="VerifySameAsAddress" duration-ms="21647" started-at="2017-03-20T14:20:29Z" finished-at="2017-03-20T14:20:51Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Address line 1 is not correct expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Address line 1 is not correct expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at TestScript.ComplaintParticipantTest.VerifySameAsAddress(ComplaintParticipantTest.java:151)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySameAsAddress -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:TestScript.ComplaintParticipantTest@66a3ffec]" name="closebrowser" is-config="true" duration-ms="19" started-at="2017-03-20T14:20:51Z" finished-at="2017-03-20T14:20:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method status="PASS" signature="openbrowser()[pri:0, instance:TestScript.ComplaintParticipantTest@66a3ffec]" name="openbrowser" is-config="true" duration-ms="8041" started-at="2017-03-20T14:20:51Z" finished-at="2017-03-20T14:20:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openbrowser -->
+        <test-method status="PASS" signature="VerifyUnkownAddress()[pri:0, instance:TestScript.ComplaintParticipantTest@66a3ffec]" name="VerifyUnkownAddress" duration-ms="20236" started-at="2017-03-20T14:20:59Z" finished-at="2017-03-20T14:21:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyUnkownAddress -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:TestScript.ComplaintParticipantTest@66a3ffec]" name="closebrowser" is-config="true" duration-ms="18" started-at="2017-03-20T14:21:20Z" finished-at="2017-03-20T14:21:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- TestScript.ComplaintParticipantTest -->
+      <class name="TestScript.AllegationTest">
+        <test-method status="PASS" signature="openbrowser()[pri:0, instance:TestScript.AllegationTest@77caeb3e]" name="openbrowser" is-config="true" duration-ms="6159" started-at="2017-03-20T14:21:20Z" finished-at="2017-03-20T14:21:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openbrowser -->
+        <test-method status="PASS" signature="DeleteAllegation()[pri:0, instance:TestScript.AllegationTest@77caeb3e]" name="DeleteAllegation" duration-ms="52771" started-at="2017-03-20T14:21:26Z" finished-at="2017-03-20T14:22:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteAllegation -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:TestScript.AllegationTest@77caeb3e]" name="closebrowser" is-config="true" duration-ms="24" started-at="2017-03-20T14:22:19Z" finished-at="2017-03-20T14:22:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method status="PASS" signature="openbrowser()[pri:0, instance:TestScript.AllegationTest@77caeb3e]" name="openbrowser" is-config="true" duration-ms="6207" started-at="2017-03-20T14:22:19Z" finished-at="2017-03-20T14:22:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openbrowser -->
+        <test-method status="PASS" signature="EditAllegation()[pri:0, instance:TestScript.AllegationTest@77caeb3e]" name="EditAllegation" duration-ms="71599" started-at="2017-03-20T14:22:25Z" finished-at="2017-03-20T14:23:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditAllegation -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:TestScript.AllegationTest@77caeb3e]" name="closebrowser" is-config="true" duration-ms="16" started-at="2017-03-20T14:23:36Z" finished-at="2017-03-20T14:23:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method status="PASS" signature="openbrowser()[pri:0, instance:TestScript.AllegationTest@77caeb3e]" name="openbrowser" is-config="true" duration-ms="7919" started-at="2017-03-20T14:23:36Z" finished-at="2017-03-20T14:23:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openbrowser -->
+        <test-method status="PASS" signature="SaveAllegationWithRequiredFieldOnly()[pri:0, instance:TestScript.AllegationTest@77caeb3e]" name="SaveAllegationWithRequiredFieldOnly" duration-ms="34776" started-at="2017-03-20T14:23:44Z" finished-at="2017-03-20T14:24:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SaveAllegationWithRequiredFieldOnly -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:TestScript.AllegationTest@77caeb3e]" name="closebrowser" is-config="true" duration-ms="15" started-at="2017-03-20T14:24:19Z" finished-at="2017-03-20T14:24:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- TestScript.AllegationTest -->
+      <class name="TestScript.MyComplaintPageTest">
+        <test-method status="PASS" signature="openbrowser()[pri:0, instance:TestScript.MyComplaintPageTest@42d80b78]" name="openbrowser" is-config="true" duration-ms="7243" started-at="2017-03-20T14:29:37Z" finished-at="2017-03-20T14:29:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openbrowser -->
+        <test-method status="PASS" signature="VerifyInProgressComplaint()[pri:0, instance:TestScript.MyComplaintPageTest@42d80b78]" name="VerifyInProgressComplaint" duration-ms="113407" started-at="2017-03-20T14:29:44Z" finished-at="2017-03-20T14:31:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyInProgressComplaint -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:TestScript.MyComplaintPageTest@42d80b78]" name="closebrowser" is-config="true" duration-ms="21" started-at="2017-03-20T14:31:37Z" finished-at="2017-03-20T14:31:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- TestScript.MyComplaintPageTest -->
+      <class name="TestScript.ComplaintSummaryTest">
+        <test-method status="PASS" signature="openbrowser()[pri:0, instance:TestScript.ComplaintSummaryTest@1e88b3c]" name="openbrowser" is-config="true" duration-ms="6713" started-at="2017-03-20T14:24:19Z" finished-at="2017-03-20T14:24:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openbrowser -->
+        <test-method status="PASS" signature="SubmitTheComplaint()[pri:0, instance:TestScript.ComplaintSummaryTest@1e88b3c]" name="SubmitTheComplaint" duration-ms="310725" started-at="2017-03-20T14:24:26Z" finished-at="2017-03-20T14:29:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitTheComplaint -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:TestScript.ComplaintSummaryTest@1e88b3c]" name="closebrowser" is-config="true" duration-ms="25" started-at="2017-03-20T14:29:37Z" finished-at="2017-03-20T14:29:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- TestScript.ComplaintSummaryTest -->
+      <class name="TestScript.ReporterProfileTest">
+        <test-method status="PASS" signature="openbrowser()[pri:0, instance:TestScript.ReporterProfileTest@3e6fa38a]" name="openbrowser" is-config="true" duration-ms="6624" started-at="2017-03-20T14:17:19Z" finished-at="2017-03-20T14:17:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openbrowser -->
+        <test-method status="PASS" signature="SaveReporterProfileWithRequiredFieldOnly()[pri:0, instance:TestScript.ReporterProfileTest@3e6fa38a]" name="SaveReporterProfileWithRequiredFieldOnly" duration-ms="28099" started-at="2017-03-20T14:17:25Z" finished-at="2017-03-20T14:17:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SaveReporterProfileWithRequiredFieldOnly -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:TestScript.ReporterProfileTest@3e6fa38a]" name="closebrowser" is-config="true" duration-ms="22" started-at="2017-03-20T14:17:53Z" finished-at="2017-03-20T14:17:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method status="PASS" signature="openbrowser()[pri:0, instance:TestScript.ReporterProfileTest@3e6fa38a]" name="openbrowser" is-config="true" duration-ms="6664" started-at="2017-03-20T14:17:53Z" finished-at="2017-03-20T14:18:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openbrowser -->
+        <test-method status="PASS" signature="VerifyRequiredFieldValidationMessage()[pri:0, instance:TestScript.ReporterProfileTest@3e6fa38a]" name="VerifyRequiredFieldValidationMessage" duration-ms="22116" started-at="2017-03-20T14:18:00Z" finished-at="2017-03-20T14:18:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyRequiredFieldValidationMessage -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:TestScript.ReporterProfileTest@3e6fa38a]" name="closebrowser" is-config="true" duration-ms="18" started-at="2017-03-20T14:18:22Z" finished-at="2017-03-20T14:18:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method status="PASS" signature="openbrowser()[pri:0, instance:TestScript.ReporterProfileTest@3e6fa38a]" name="openbrowser" is-config="true" duration-ms="7626" started-at="2017-03-20T14:18:22Z" finished-at="2017-03-20T14:18:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openbrowser -->
+        <test-method status="PASS" signature="VerifySignUp()[pri:0, instance:TestScript.ReporterProfileTest@3e6fa38a]" name="VerifySignUp" duration-ms="16079" started-at="2017-03-20T14:18:30Z" finished-at="2017-03-20T14:18:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySignUp -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:TestScript.ReporterProfileTest@3e6fa38a]" name="closebrowser" is-config="true" duration-ms="16" started-at="2017-03-20T14:18:46Z" finished-at="2017-03-20T14:18:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method status="PASS" signature="openbrowser()[pri:0, instance:TestScript.ReporterProfileTest@3e6fa38a]" name="openbrowser" is-config="true" duration-ms="7452" started-at="2017-03-20T14:18:46Z" finished-at="2017-03-20T14:18:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openbrowser -->
+        <test-method status="PASS" signature="VerifyUniqueUserName()[pri:0, instance:TestScript.ReporterProfileTest@3e6fa38a]" name="VerifyUniqueUserName" duration-ms="18501" started-at="2017-03-20T14:18:53Z" finished-at="2017-03-20T14:19:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyUniqueUserName -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:TestScript.ReporterProfileTest@3e6fa38a]" name="closebrowser" is-config="true" duration-ms="14" started-at="2017-03-20T14:19:12Z" finished-at="2017-03-20T14:19:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- TestScript.ReporterProfileTest -->
+    </test> <!-- MR Portal User Stories Script -->
+  </suite> <!-- MRP Regression Test Suite -->
+</testng-results>

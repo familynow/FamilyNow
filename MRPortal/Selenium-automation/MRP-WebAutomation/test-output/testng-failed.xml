@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MRP Regression Test Suite]">
+  <listeners>
+    <listener class-name="General.TestListener"/>
+    <listener class-name="General.CustomReport"/>
+  </listeners>
+  <test name="MR Portal User Stories Script(failed)">
+    <classes>
+      <class name="TestScript.MyComplaintPageTest">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="openbrowser"/>
+        </methods>
+      </class> <!-- TestScript.MyComplaintPageTest -->
+      <class name="TestScript.AllegationTest">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="openbrowser"/>
+        </methods>
+      </class> <!-- TestScript.AllegationTest -->
+      <class name="TestScript.ComplaintParticipantTest">
+        <methods>
+          <include name="VerifySameAsAddress"/>
+          <include name="openbrowser"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- TestScript.ComplaintParticipantTest -->
+      <class name="TestScript.ReporterProfileTest">
+        <methods>
+          <include name="openbrowser"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- TestScript.ReporterProfileTest -->
+      <class name="TestScript.ComplaintSummaryTest">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="openbrowser"/>
+        </methods>
+      </class> <!-- TestScript.ComplaintSummaryTest -->
+    </classes>
+  </test> <!-- MR Portal User Stories Script(failed) -->
+</suite> <!-- Failed suite [MRP Regression Test Suite] -->

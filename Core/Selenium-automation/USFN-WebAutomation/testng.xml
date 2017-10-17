@@ -1,0 +1,50 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="USFN Regression Test Suite" verbose="1">
+ <listeners>
+       <listener class-name="General.TestListener"/>
+        <listener class-name="General.CustomReport"/>
+           <listener class-name="General.RetryListener"/>
+  </listeners>
+  <test name="Investigation Module">
+    <classes>
+    <!--  <class name="TestScripts.DiscontinueTest"/>
+    
+     <class name="TestScripts.VerifySafteyPlanParticipantTest"/>
+       <class name="TestScripts.ViewSafetyPlanListTest"/>
+        <class name="TestScripts.CreateGoalTest"/> 
+        <class name="TestScripts.CreateTaskTest">
+         <class name="TestScripts.AddResponsiblePartiesTest">
+         <class name="TestScripts.AuthorizationTest"> -->
+         
+       
+      
+     <!--  <class name="TestScripts.UserStory20Test"/>
+         <class name="TestScripts.UserStory17Test"/>
+       <class name="TestScripts.UserStory18Test"/> 
+        <class name="TestScripts.UserStory20Test"/>
+        </class> -->
+
+    </classes>
+  </test>
+  <test name="CPS Intake Module">
+  <classes>
+        <class name="TestScripts.UserStory16Test"/> 
+         <class name="TestScripts.UserStory17Test"/> 
+        <class name="TestScripts.UserStory18Test"/>
+          <class name="TestScripts.UserStory20Test"/>
+         <class name="TestScripts.UserStory229Test"/>
+  </classes>
+  </test>
+   <test name="Admin Module">
+   <classes>
+     <class name="TestScripts.AddSecurityUserTest"/> 
+   </classes>
+   </test>
+  <test name="Non CPS INtake">
+    <classes>
+    <!--  <class name="TestScripts.UserStory23Test"/> 
+      <class name="TestScripts.UserStory23Test"/> 
+      <class name="TestScripts.UserStoryIN10Test"/>-->
+    </classes>
+  </test> 
+</suite>

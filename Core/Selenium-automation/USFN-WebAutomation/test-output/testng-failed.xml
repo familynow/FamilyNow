@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [USFN Regression Test Suite]">
+  <listeners>
+    <listener class-name="General.TestListener"/>
+    <listener class-name="General.CustomReport"/>
+    <listener class-name="General.RetryListener"/>
+  </listeners>
+  <test name="CPS Intake Module(failed)">
+    <classes>
+      <class name="TestScripts.UserStory16Test">
+        <methods>
+          <include name="VerifyEditSubmittedIntake"/>
+          <include name="openbrowser"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- TestScripts.UserStory16Test -->
+    </classes>
+  </test> <!-- CPS Intake Module(failed) -->
+</suite> <!-- Failed suite [USFN Regression Test Suite] -->

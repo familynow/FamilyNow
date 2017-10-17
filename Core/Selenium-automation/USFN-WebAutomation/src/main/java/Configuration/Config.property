@@ -1,0 +1,6 @@
+TestUrl=http://inblr-vm-1349.eu.uis.unisys.com:8080/main-web/
+DevUrl=http://inblr-vm-1348.eu.uis.unisys.com:8080/main-web/
+Browser=firefox
+UserName=familynow@unisys.com
+Password=qa
+env=Test

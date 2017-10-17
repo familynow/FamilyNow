@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Provider Portal Suite" verbose="1">
+<listeners>
+       <listener class-name="general.TestListener"/>
+       <listener class-name="general.CustomReport"/>
+      
+       
+  </listeners>
+  <test name="User Stories">
+    <classes>
+     <class name="testScripts.ApplicationTypeTest"/>
+     <class name="testScripts.ApplicationParticipantTest"/>
+     <class name="testScripts.AddressInformationTest"/> 
+     <class name="testScripts.FosterCareTest"/> 
+     <class name="testScripts.PreferenceTest"/> 
+     <class name="testScripts.ReferenceTest"/>
+     <class name="testScripts.SupportingDocumentTest"/> 
+     <class name="testScripts.ApplicationSummaryTest"/>
+    
+    <!-- 
+        <class name="testScripts.SupportingDocumentTest"/>
+           <class name="testScripts.ProviderToMainMapping"/>-->
+      
+       
+       
+      
+
+    </classes>
+  </test>
+
+</suite>

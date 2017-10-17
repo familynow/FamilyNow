@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-MRP_Regression_Test_Suite">
+              <span class="suite-name border-failed">MRP Regression Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-MRP_Regression_Test_Suite">
+                    <span>D:\GitProjects\mandated-reporter-portal\MRP-WebAutomation\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-MRP_Regression_Test_Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-MRP_Regression_Test_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-MRP_Regression_Test_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-MRP_Regression_Test_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-MRP_Regression_Test_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-MRP_Regression_Test_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">13 methods, 1 failed,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-MRP_Regression_Test_Suite" class="hide-methods failed suite-MRP_Regression_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-MRP_Regression_Test_Suite -->
+                      <a href="#" panel-name="suite-MRP_Regression_Test_Suite" class="show-methods failed suite-MRP_Regression_Test_Suite"> (show)</a> <!-- show-methods failed suite-MRP_Regression_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-MRP_Regression_Test_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MRP_Regression_Test_Suite" title="TestScript.ComplaintParticipantTest" hash-for-method="VerifySameAsAddress">VerifySameAsAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-MRP_Regression_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-MRP_Regression_Test_Suite" class="hide-methods passed suite-MRP_Regression_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-MRP_Regression_Test_Suite -->
+                      <a href="#" panel-name="suite-MRP_Regression_Test_Suite" class="show-methods passed suite-MRP_Regression_Test_Suite"> (show)</a> <!-- show-methods passed suite-MRP_Regression_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-MRP_Regression_Test_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MRP_Regression_Test_Suite" title="TestScript.AllegationTest" hash-for-method="DeleteAllegation">DeleteAllegation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MRP_Regression_Test_Suite" title="TestScript.ComplaintParticipantTest" hash-for-method="DeleteComplaintParticipant">DeleteComplaintParticipant</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MRP_Regression_Test_Suite" title="TestScript.AllegationTest" hash-for-method="EditAllegation">EditAllegation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MRP_Regression_Test_Suite" title="TestScript.AllegationTest" hash-for-method="SaveAllegationWithRequiredFieldOnly">SaveAllegationWithRequiredFieldOnly</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MRP_Regression_Test_Suite" title="TestScript.ComplaintParticipantTest" hash-for-method="SaveComplaintParticipantWithRequiredFieldOnly">SaveComplaintParticipantWithRequiredFieldOnly</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MRP_Regression_Test_Suite" title="TestScript.ReporterProfileTest" hash-for-method="SaveReporterProfileWithRequiredFieldOnly">SaveReporterProfileWithRequiredFieldOnly</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MRP_Regression_Test_Suite" title="TestScript.ComplaintSummaryTest" hash-for-method="SubmitTheComplaint">SubmitTheComplaint</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MRP_Regression_Test_Suite" title="TestScript.MyComplaintPageTest" hash-for-method="VerifyInProgressComplaint">VerifyInProgressComplaint</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MRP_Regression_Test_Suite" title="TestScript.ReporterProfileTest" hash-for-method="VerifyRequiredFieldValidationMessage">VerifyRequiredFieldValidationMessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MRP_Regression_Test_Suite" title="TestScript.ReporterProfileTest" hash-for-method="VerifySignUp">VerifySignUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MRP_Regression_Test_Suite" title="TestScript.ReporterProfileTest" hash-for-method="VerifyUniqueUserName">VerifyUniqueUserName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MRP_Regression_Test_Suite" title="TestScript.ComplaintParticipantTest" hash-for-method="VerifyUnkownAddress">VerifyUnkownAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-MRP_Regression_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-MRP_Regression_Test_Suite" class="panel MRP_Regression_Test_Suite">
+          <div class="suite-MRP_Regression_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestScript.ComplaintParticipantTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifySameAsAddress">
+                  </a> <!-- VerifySameAsAddress -->
+                  <span class="method-name">VerifySameAsAddress</span>
+                  <div class="stack-trace">java.lang.AssertionError: Address line 1 is not correct expected [true] but found [false]
+	at TestScript.ComplaintParticipantTest.VerifySameAsAddress(ComplaintParticipantTest.java:151)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MRP_Regression_Test_Suite-class-failed -->
+          <div class="suite-MRP_Regression_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestScript.MyComplaintPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyInProgressComplaint">
+                  </a> <!-- VerifyInProgressComplaint -->
+                  <span class="method-name">VerifyInProgressComplaint</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MRP_Regression_Test_Suite-class-passed -->
+          <div class="suite-MRP_Regression_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestScript.AllegationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeleteAllegation">
+                  </a> <!-- DeleteAllegation -->
+                  <span class="method-name">DeleteAllegation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="EditAllegation">
+                  </a> <!-- EditAllegation -->
+                  <span class="method-name">EditAllegation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SaveAllegationWithRequiredFieldOnly">
+                  </a> <!-- SaveAllegationWithRequiredFieldOnly -->
+                  <span class="method-name">SaveAllegationWithRequiredFieldOnly</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MRP_Regression_Test_Suite-class-passed -->
+          <div class="suite-MRP_Regression_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestScript.ComplaintParticipantTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeleteComplaintParticipant">
+                  </a> <!-- DeleteComplaintParticipant -->
+                  <span class="method-name">DeleteComplaintParticipant</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SaveComplaintParticipantWithRequiredFieldOnly">
+                  </a> <!-- SaveComplaintParticipantWithRequiredFieldOnly -->
+                  <span class="method-name">SaveComplaintParticipantWithRequiredFieldOnly</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyUnkownAddress">
+                  </a> <!-- VerifyUnkownAddress -->
+                  <span class="method-name">VerifyUnkownAddress</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MRP_Regression_Test_Suite-class-passed -->
+          <div class="suite-MRP_Regression_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestScript.ReporterProfileTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SaveReporterProfileWithRequiredFieldOnly">
+                  </a> <!-- SaveReporterProfileWithRequiredFieldOnly -->
+                  <span class="method-name">SaveReporterProfileWithRequiredFieldOnly</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyRequiredFieldValidationMessage">
+                  </a> <!-- VerifyRequiredFieldValidationMessage -->
+                  <span class="method-name">VerifyRequiredFieldValidationMessage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifySignUp">
+                  </a> <!-- VerifySignUp -->
+                  <span class="method-name">VerifySignUp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyUniqueUserName">
+                  </a> <!-- VerifyUniqueUserName -->
+                  <span class="method-name">VerifyUniqueUserName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MRP_Regression_Test_Suite-class-passed -->
+          <div class="suite-MRP_Regression_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestScript.ComplaintSummaryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SubmitTheComplaint">
+                  </a> <!-- SubmitTheComplaint -->
+                  <span class="method-name">SubmitTheComplaint</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MRP_Regression_Test_Suite-class-passed -->
+        </div> <!-- panel MRP_Regression_Test_Suite -->
+        <div panel-name="test-xml-MRP_Regression_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\GitProjects\mandated-reporter-portal\MRP-WebAutomation\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;MRP Regression Test Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;General.TestListener&quot;/&gt;
+    &lt;listener class-name=&quot;General.CustomReport&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;MR Portal User Stories Script&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestScript.ReporterProfileTest&quot;/&gt;
+      &lt;class name=&quot;TestScript.ComplaintParticipantTest&quot;/&gt;
+      &lt;class name=&quot;TestScript.AllegationTest&quot;/&gt;
+      &lt;class name=&quot;TestScript.ComplaintSummaryTest&quot;/&gt;
+      &lt;class name=&quot;TestScript.MyComplaintPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- MR Portal User Stories Script --&gt;
+&lt;/suite&gt; &lt;!-- MRP Regression Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-MRP_Regression_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for MRP Regression Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">MR Portal User Stories Script (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-MRP_Regression_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for MRP Regression Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-MRP_Regression_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for MRP Regression Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_MRP_Regression_Test_Suite');
+function tableData_MRP_Regression_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(13);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'SubmitTheComplaint')
+data.setCell(0, 2, 'TestScript.ComplaintSummaryTest')
+data.setCell(0, 3, 310725);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'VerifyInProgressComplaint')
+data.setCell(1, 2, 'TestScript.MyComplaintPageTest')
+data.setCell(1, 3, 113407);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'EditAllegation')
+data.setCell(2, 2, 'TestScript.AllegationTest')
+data.setCell(2, 3, 71599);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'DeleteAllegation')
+data.setCell(3, 2, 'TestScript.AllegationTest')
+data.setCell(3, 3, 52771);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'SaveAllegationWithRequiredFieldOnly')
+data.setCell(4, 2, 'TestScript.AllegationTest')
+data.setCell(4, 3, 34776);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'DeleteComplaintParticipant')
+data.setCell(5, 2, 'TestScript.ComplaintParticipantTest')
+data.setCell(5, 3, 28328);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'SaveReporterProfileWithRequiredFieldOnly')
+data.setCell(6, 2, 'TestScript.ReporterProfileTest')
+data.setCell(6, 3, 28099);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'SaveComplaintParticipantWithRequiredFieldOnly')
+data.setCell(7, 2, 'TestScript.ComplaintParticipantTest')
+data.setCell(7, 3, 24070);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'VerifyRequiredFieldValidationMessage')
+data.setCell(8, 2, 'TestScript.ReporterProfileTest')
+data.setCell(8, 3, 22116);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'VerifySameAsAddress')
+data.setCell(9, 2, 'TestScript.ComplaintParticipantTest')
+data.setCell(9, 3, 21647);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'VerifyUnkownAddress')
+data.setCell(10, 2, 'TestScript.ComplaintParticipantTest')
+data.setCell(10, 3, 20236);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'VerifyUniqueUserName')
+data.setCell(11, 2, 'TestScript.ReporterProfileTest')
+data.setCell(11, 3, 18501);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'VerifySignUp')
+data.setCell(12, 2, 'TestScript.ReporterProfileTest')
+data.setCell(12, 3, 16079);
+window.suiteTableData['MRP_Regression_Test_Suite']= { tableData: data, tableDiv: 'times-div-MRP_Regression_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 12 minutes</span>
+              <div id="times-div-MRP_Regression_Test_Suite">
+              </div> <!-- times-div-MRP_Regression_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-MRP_Regression_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for MRP Regression Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-MRP_Regression_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-MRP_Regression_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestScript.ReporterProfileTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SaveReporterProfileWithRequiredFieldOnly</span>
+                <span class="method-start">6624 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">34725 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser</span>
+                <span class="method-start">34748 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyRequiredFieldValidationMessage</span>
+                <span class="method-start">41412 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">63529 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser</span>
+                <span class="method-start">63547 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifySignUp</span>
+                <span class="method-start">71173 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">87253 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser</span>
+                <span class="method-start">87270 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyUniqueUserName</span>
+                <span class="method-start">94723 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">113226 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestScript.ComplaintParticipantTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser</span>
+                <span class="method-start">113242 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DeleteComplaintParticipant</span>
+                <span class="method-start">120390 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">148720 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser</span>
+                <span class="method-start">148741 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SaveComplaintParticipantWithRequiredFieldOnly</span>
+                <span class="method-start">156515 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">180587 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser</span>
+                <span class="method-start">180622 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifySameAsAddress</span>
+                <span class="method-start">190559 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">212647 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser</span>
+                <span class="method-start">212666 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyUnkownAddress</span>
+                <span class="method-start">220707 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">240944 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestScript.AllegationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser</span>
+                <span class="method-start">240963 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DeleteAllegation</span>
+                <span class="method-start">247122 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">299894 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser</span>
+                <span class="method-start">299924 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">EditAllegation</span>
+                <span class="method-start">306131 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">377731 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser</span>
+                <span class="method-start">377747 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SaveAllegationWithRequiredFieldOnly</span>
+                <span class="method-start">385666 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">420443 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestScript.ComplaintSummaryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser</span>
+                <span class="method-start">420458 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SubmitTheComplaint</span>
+                <span class="method-start">427171 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">737898 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestScript.MyComplaintPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openbrowser</span>
+                <span class="method-start">737923 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyInProgressComplaint</span>
+                <span class="method-start">745166 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">858574 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
